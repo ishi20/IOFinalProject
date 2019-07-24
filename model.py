@@ -1,4 +1,6 @@
-#
+#Neural network accuracy : 0.8381466201205966
+
+#Logistic regression accuracy : 0.8378645227264713
 
 import pandas as pd
 import glob
@@ -88,7 +90,7 @@ y_train_pred = model.predict_classes(xTrain)
 print('Training Accuracy ---->',accuracy_score(yTrain,y_train_pred))
 print('Testing Accuracy  ---->',accuracy_score(yTest,y_pred))
 
-#0.
+#0.8353609083536091
 clf=svm.SVC(kernel='linear')
 clf.fit(xTrain, yTrain)
 confidence = clf.score(xTest, yTest)
