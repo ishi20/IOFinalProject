@@ -88,6 +88,7 @@ y_train_pred = model.predict_classes(xTrain)
 print('Training Accuracy ---->',accuracy_score(yTrain,y_train_pred))
 print('Testing Accuracy  ---->',accuracy_score(yTest,y_pred))
 
+#0.
 clf=svm.SVC(kernel='linear')
 clf.fit(xTrain, yTrain)
 confidence = clf.score(xTest, yTest)
